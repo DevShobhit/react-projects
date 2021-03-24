@@ -1,10 +1,11 @@
 {
   "name": "resume-builder",
   "version": "1.0.0",
-  "description": "Build professional resume",
+  "description": "Resume builder",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node server",
+    "build": "cd client/ && npm install && npm run build"
   },
   "author": "DevShobhit",
   "license": "ISC",
@@ -14,8 +15,5 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "html-pdf": "^2.2.0"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.7"
   }
 }

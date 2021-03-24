@@ -21,11 +21,7 @@ module.exports = ({ firstName, lastName, email, phone, linkedin, github, address
               --main-width: 6.4in;
               --sidebar-width: calc(var(--page-width) - var(--main-width));
           }
-          html{
-            zoom: 1.4;
-        }   
-
-  
+         
           body {
               width: var(--page-width);
               height: var(--page-height);
@@ -48,12 +44,12 @@ module.exports = ({ firstName, lastName, email, phone, linkedin, github, address
               float: right;
               position: absolute;
               width: var(--sidebar-width);
-              height: 100%;
+              height: var(--page-height);
               top: 0;
               right: 0;
               padding: 0.6in .2in;
               background-color: #f2f2f2;
-              font-size: 9pt;
+              font-size: 8pt;
           }
   
           .title {
@@ -223,7 +219,7 @@ module.exports = ({ firstName, lastName, email, phone, linkedin, github, address
               <h2 class='edu-title'>Education</h2>
               <div class='edu'>
                   <h3 class='edu-ins'>${edu1_college}</h3>
-                  <span class='edu-dur'>${"( " + edu1_start_year + "-" + edu1_end_year + ")"}</span>
+                  <span class='edu-dur'>${"( " + edu1_start_year + "-" + edu1_end_year + " )"}</span>
                   <div class='edu-qual'>${edu1_qualification}</div>
                   <div class='edu-desc'>
                       ${edu1_desc}
