@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { ThemeProvider as MuiThemeProvider } from '@material-ui/core/styles';
-import { Paper, Card, CardHeader, TextField, Button, TextareaAutosize, CardActions } from '@material-ui/core';
+import { Paper, Card, CardHeader, TextField, Button, CardActions } from '@material-ui/core';
 import { saveAs } from 'file-saver';
 
 const axios = require('axios');
@@ -49,6 +49,7 @@ export class FormSummaryDetails extends Component {
                                 multiline
                                 fullWidth
                                 rows={10}
+                                value={this.props.value.summary}
                                 onChange={handleChange('summary')}
                             />
                             <CardActions style={{
@@ -70,8 +71,3 @@ export class FormSummaryDetails extends Component {
 }
 
 export default FormSummaryDetails;
-
-
-
-
-

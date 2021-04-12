@@ -5,10 +5,7 @@ import Summary from './summary';
 import Experience from './experience';
 import Education from './education';
 import Success from './success';
-
-const val = {
-
-}
+import handleValidation from './validation';
 
 export class ResumeInfo extends Component {
     state = {
@@ -67,14 +64,18 @@ export class ResumeInfo extends Component {
         interest3: '',
 
         summary: '',
+
+        errors: ''
     };
 
     // Proceed to next step
     nextStep = () => {
-        const { step } = this.state;
-        this.setState({
-            step: step + 1
-        });
+        if (this.handleValidation()) {
+            const { step } = this.state;
+            this.setState({
+                step: step + 1
+            });
+        }
     };
 
     // Go back to prev step
@@ -180,6 +181,7 @@ export class ResumeInfo extends Component {
                         nextStep={this.nextStep}
                         handleChange={this.handleChange}
                         value={values}
+                        error={this.state.errors}
                     />
                 );
 
@@ -190,6 +192,7 @@ export class ResumeInfo extends Component {
                         prevStep={this.prevStep}
                         handleChange={this.handleChange}
                         value={values}
+                        error={this.state.errors}
                     />
                 );
             case 3:
@@ -199,6 +202,7 @@ export class ResumeInfo extends Component {
                         prevStep={this.prevStep}
                         handleChange={this.handleChange}
                         value={values}
+                        error={this.state.errors}
                     />
                 );
             case 4:
@@ -208,6 +212,7 @@ export class ResumeInfo extends Component {
                         prevStep={this.prevStep}
                         handleChange={this.handleChange}
                         value={values}
+                        error={this.state.errors}
                     />
                 );
 
@@ -230,4 +235,5 @@ export class ResumeInfo extends Component {
     }
 }
 
+ResumeInfo.prototype.handleValidation = handleValidation
 export default ResumeInfo

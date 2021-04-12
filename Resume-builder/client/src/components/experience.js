@@ -36,6 +36,9 @@ export class FormExperienceDetails extends Component {
                                                     name="title"
                                                     label="Title"
                                                     fullWidth
+                                                    value={this.props.value.proj1_title}
+                                                    error={this.props.error.proj1_title}
+                                                    helperText={this.props.error.proj1_title}
                                                     onChange={handleChange('proj1_title')}
 
                                                 />
@@ -48,6 +51,9 @@ export class FormExperienceDetails extends Component {
                                                     name="link"
                                                     label="Link"
                                                     fullWidth
+                                                    value={this.props.value.proj1_link}
+                                                    error={this.props.error.proj1_link}
+                                                    helperText={this.props.error.proj1_link}
                                                     onChange={handleChange('proj1_link')}
                                                 />
                                             </Grid>
@@ -59,6 +65,9 @@ export class FormExperienceDetails extends Component {
                                                     name="Description"
                                                     label="Description"
                                                     fullWidth
+                                                    value={this.props.value.proj1_desc}
+                                                    error={this.props.error.proj1_desc}
+                                                    helperText={this.props.error.proj1_desc}
                                                     onChange={handleChange('proj1_desc')}
                                                 />
                                             </Grid>
@@ -72,6 +81,7 @@ export class FormExperienceDetails extends Component {
                                                     name="title"
                                                     label="Title"
                                                     fullWidth
+                                                    value={this.props.value.proj2_title}
                                                     onChange={handleChange('proj2_title')}
                                                 />
                                             </Grid>
@@ -83,6 +93,7 @@ export class FormExperienceDetails extends Component {
                                                     name="link"
                                                     label="Link"
                                                     fullWidth
+                                                    value={this.props.value.proj2_link}
                                                     onChange={handleChange('proj2_link')}
                                                 />
                                             </Grid>
@@ -94,6 +105,7 @@ export class FormExperienceDetails extends Component {
                                                     name="Description"
                                                     label="Description"
                                                     fullWidth
+                                                    value={this.props.value.proj2_desc}
                                                     onChange={handleChange('proj2_desc')}
                                                 />
                                             </Grid>
@@ -106,6 +118,7 @@ export class FormExperienceDetails extends Component {
                                                     variant="outlined"
                                                     name="title"
                                                     label="Title"
+                                                    value={this.props.value.proj3_title}
                                                     onChange={handleChange('proj3_title')}
                                                     fullWidth
                                                 />
@@ -118,6 +131,7 @@ export class FormExperienceDetails extends Component {
                                                     name="link"
                                                     label="Link"
                                                     fullWidth
+                                                    value={this.props.value.proj3_link}
                                                     onChange={handleChange('proj3_link')}
                                                 />
                                             </Grid>
@@ -129,6 +143,7 @@ export class FormExperienceDetails extends Component {
                                                     name="Description"
                                                     label="Description"
                                                     fullWidth
+                                                    value={this.props.value.proj3_desc}
                                                     onChange={handleChange('proj3_desc')}
                                                 />
                                             </Grid>
@@ -142,6 +157,7 @@ export class FormExperienceDetails extends Component {
                                                     name="organization"
                                                     label="Organization"
                                                     fullWidth
+                                                    value={this.props.value.exp1_org}
                                                     onChange={handleChange('exp1_org')}
                                                 />
                                             </Grid>
@@ -152,6 +168,7 @@ export class FormExperienceDetails extends Component {
                                                     variant="outlined"
                                                     name="position"
                                                     label="Position"
+                                                    value={this.props.value.exp1_pos}
                                                     onChange={handleChange('exp1_pos')}
 
                                                 />
@@ -163,7 +180,7 @@ export class FormExperienceDetails extends Component {
                                                     variant="outlined"
                                                     name="duration"
                                                     label="Duration"
-                                                    fullWidth
+                                                    value={this.props.value.exp1_dur}
                                                     onChange={handleChange('exp1_dur')}
                                                 />
                                             </Grid>
@@ -175,6 +192,7 @@ export class FormExperienceDetails extends Component {
                                                     name="description"
                                                     label="Description"
                                                     fullWidth
+                                                    value={this.props.value.exp1_desc}
                                                     onChange={handleChange('exp1_desc')}
                                                 />
                                             </Grid>
@@ -188,6 +206,7 @@ export class FormExperienceDetails extends Component {
                                                     name="organization"
                                                     label="Organization"
                                                     fullWidth
+                                                    value={this.props.value.exp2_org}
                                                     onChange={handleChange('exp2_org')}
                                                 />
                                             </Grid>
@@ -198,6 +217,7 @@ export class FormExperienceDetails extends Component {
                                                     variant="outlined"
                                                     name="position"
                                                     label="Position"
+                                                    value={this.props.value.exp2_pos}
                                                     onChange={handleChange('exp2_pos')}
 
                                                 />
@@ -209,6 +229,7 @@ export class FormExperienceDetails extends Component {
                                                     variant="outlined"
                                                     name="duration"
                                                     label="Duration"
+                                                    value={this.props.value.exp2_dur}
                                                     onChange={handleChange('exp2_dur')}
                                                     fullWidth
                                                 />
@@ -221,6 +242,7 @@ export class FormExperienceDetails extends Component {
                                                     name="description"
                                                     label="Description"
                                                     fullWidth
+                                                    value={this.props.value.exp2_desc}
                                                     onChange={handleChange('exp2_desc')}
 
                                                 />

@@ -3,6 +3,8 @@ const bodyParser = require('body-parser');
 const pdf = require('html-pdf');
 const cors = require('cors');
 const path = require('path');
+const mongoose = require('mongoose');
+const Resume = require('./database');
 
 const pdfTemplate = require('./Template');
 
@@ -15,6 +17,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.post('/create-pdf', (req, res) => {
+    const newResume = new Resume({ ...req.body });
+    newResume.save().then(console.log('Creating the Resume'));
+
     pdf.create(pdfTemplate(req.body), {}).toFile(`${__dirname}/Resume.pdf`, (err) => {
         if (err) {
             res.send(Promise.reject());
@@ -22,7 +27,7 @@ app.post('/create-pdf', (req, res) => {
         }
 
         res.send(Promise.resolve());
-        console.log('Success');
+        console.log('Successfully created the resume');
     });
 });
 

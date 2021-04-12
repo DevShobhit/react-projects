@@ -43,7 +43,9 @@ export class FormEducationDetails extends Component {
                           name="college"
                           fullWidth
                           label="College/University"
-                          fullWidth
+                          value={this.props.value.edu1_college}
+                          error={this.props.error.edu1_college}
+                          helperText={this.props.error.edu1_college}
                           onChange={handleChange('edu1_college')}
                         />
                       </Grid>
@@ -56,6 +58,9 @@ export class FormEducationDetails extends Component {
                           id='edu1_qualification'
                           label="Qualification"
                           fullWidth
+                          value={this.props.value.edu1_qualification}
+                          error={this.props.error.edu1_qualification}
+                          helperText={this.props.error.edu1_qualification}
                           onChange={handleChange('edu1_qualification')}
                         />
                       </Grid>
@@ -117,12 +122,15 @@ export class FormEducationDetails extends Component {
                       <Grid item xs={12}>
                         <TextField
                           required
+                          fullWidth
                           margin="dense"
                           variant="outlined"
                           name="description"
                           label="Description"
+                          value={this.props.value.edu1_desc}
+                          error={this.props.error.edu1_desc}
+                          helperText={this.props.error.edu1_desc}
                           onChange={handleChange('edu1_desc')}
-                          fullWidth
                         />
                       </Grid>
 
@@ -137,7 +145,9 @@ export class FormEducationDetails extends Component {
                           name="school"
                           fullWidth
                           label="School"
-                          fullWidth
+                          value={this.props.value.edu2_school}
+                          error={this.props.error.edu2_school}
+                          helperText={this.props.error.edu2_school}
                           onChange={handleChange('edu2_school')}
                         />
                       </Grid>
@@ -149,6 +159,9 @@ export class FormEducationDetails extends Component {
                           name="qualification"
                           label="Qualification"
                           fullWidth
+                          value={this.props.value.edu2_qualification}
+                          error={this.props.error.edu2_qualification}
+                          helperText={this.props.error.edu2_qualification}
                           onChange={handleChange('edu2_qualification')}
                         />
                       </Grid>
@@ -182,12 +195,15 @@ export class FormEducationDetails extends Component {
                       <Grid item xs={12}>
                         <TextField
                           required
+                          fullWidth
                           margin="dense"
                           variant="outlined"
                           name="description"
                           label="Description"
+                          value={this.props.value.edu2_desc}
+                          error={this.props.error.edu2_desc}
+                          helperText={this.props.error.edu2_desc}
                           onChange={handleChange('edu2_desc')}
-                          fullWidth
                         />
                       </Grid>
 

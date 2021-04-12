@@ -36,6 +36,9 @@ export class FormUserDetails extends Component {
                                                     fullWidth
                                                     label="First Name"
                                                     variant="outlined"
+                                                    value={this.props.value.firstName}
+                                                    error={this.props.error.firstName}
+                                                    helperText={this.props.error.firstName}
                                                     onChange={handleChange('firstName')}
 
                                                 />
@@ -49,6 +52,9 @@ export class FormUserDetails extends Component {
                                                     name='lastName'
                                                     label="Last Name"
                                                     variant="outlined"
+                                                    value={this.props.value.lastName}
+                                                    error={this.props.error.lastName}
+                                                    helperText={this.props.error.lastName}
                                                     onChange={handleChange('lastName')}
                                                 />
                                             </Grid>
@@ -61,6 +67,9 @@ export class FormUserDetails extends Component {
                                                     name='address'
                                                     label="Address"
                                                     variant="outlined"
+                                                    value={this.props.value.address}
+                                                    error={this.props.error.address}
+                                                    helperText={this.props.error.address}
                                                     onChange={handleChange('address')}
                                                 />
                                             </Grid>
@@ -73,6 +82,9 @@ export class FormUserDetails extends Component {
                                                     name='email'
                                                     label="Email Address"
                                                     variant="outlined"
+                                                    value={this.props.value.email}
+                                                    error={this.props.error.email}
+                                                    helperText={this.props.error.email}
                                                     onChange={handleChange('email')}
                                                 />
                                             </Grid>
@@ -85,6 +97,9 @@ export class FormUserDetails extends Component {
                                                     name='phone'
                                                     label="Phone"
                                                     variant="outlined"
+                                                    value={this.props.value.phone}
+                                                    error={this.props.error.phone}
+                                                    helperText={this.props.error.phone}
                                                     onChange={handleChange('phone')}
                                                 />
                                             </Grid>
@@ -96,6 +111,7 @@ export class FormUserDetails extends Component {
                                                     name='github'
                                                     label="Github"
                                                     variant="outlined"
+                                                    value={this.props.value.github}
                                                     onChange={handleChange('github')}
                                                 />
                                             </Grid>
@@ -107,6 +123,7 @@ export class FormUserDetails extends Component {
                                                     fullWidth
                                                     label="LinkedIn"
                                                     variant="outlined"
+                                                    value={this.props.value.linkedin}
                                                     onChange={handleChange('linkedin')}
                                                 />
                                             </Grid>

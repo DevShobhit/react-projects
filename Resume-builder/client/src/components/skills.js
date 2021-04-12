@@ -36,6 +36,9 @@ export class FormSkillDetails extends Component {
                                                     name="skill"
                                                     id="skill-1"
                                                     label="Skill-1"
+                                                    value={this.props.value.skill1}
+                                                    error={this.props.error.skill1}
+                                                    helperText={this.props.error.skill1}
                                                     onChange={handleChange('skill1')}
                                                     fullWidth
 
@@ -48,6 +51,9 @@ export class FormSkillDetails extends Component {
                                                     variant="outlined"
                                                     name="skill"
                                                     label="Skill-2"
+                                                    value={this.props.value.skill2}
+                                                    error={this.props.error.skill2}
+                                                    helperText={this.props.error.skill2}
                                                     onChange={handleChange('skill2')}
                                                     fullWidth
                                                 />
@@ -60,6 +66,9 @@ export class FormSkillDetails extends Component {
                                                     name="skill"
                                                     label="Skill-3"
                                                     fullWidth
+                                                    value={this.props.value.skill3}
+                                                    error={this.props.error.skill3}
+                                                    helperText={this.props.error.skill3}
                                                     onChange={handleChange('skill3')}
 
                                                 />
@@ -74,6 +83,9 @@ export class FormSkillDetails extends Component {
                                                     variant="outlined"
                                                     name="Language"
                                                     label="Language"
+                                                    value={this.props.value.language1}
+                                                    error={this.props.error.language1}
+                                                    helperText={this.props.error.language1}
                                                     onChange={handleChange('language1')}
                                                     fullWidth
                                                 />
@@ -87,6 +99,9 @@ export class FormSkillDetails extends Component {
                                                     name="Language"
                                                     label="Language"
                                                     fullWidth
+                                                    value={this.props.value.language2}
+                                                    error={this.props.error.language2}
+                                                    helperText={this.props.error.language2}
                                                     onChange={handleChange('language2')}
                                                 />
                                             </Grid>
@@ -100,6 +115,9 @@ export class FormSkillDetails extends Component {
                                                     name="Interest"
                                                     label="Interest"
                                                     fullWidth
+                                                    value={this.props.value.interest1}
+                                                    error={this.props.error.interest1}
+                                                    helperText={this.props.error.interest1}
                                                     onChange={handleChange('interest1')}
                                                 />
                                             </Grid>
@@ -111,6 +129,9 @@ export class FormSkillDetails extends Component {
                                                     name="Interest"
                                                     label="Interest"
                                                     fullWidth
+                                                    value={this.props.value.interest2}
+                                                    error={this.props.error.interest2}
+                                                    helperText={this.props.error.interest2}
                                                     onChange={handleChange('interest2')}
                                                 />
                                             </Grid>
@@ -122,6 +143,9 @@ export class FormSkillDetails extends Component {
                                                     name="Interest"
                                                     label="Interest"
                                                     fullWidth
+                                                    value={this.props.value.interest3}
+                                                    error={this.props.error.interest3}
+                                                    helperText={this.props.error.interest3}
                                                     onChange={handleChange('interest3')}
                                                 />
                                             </Grid>
