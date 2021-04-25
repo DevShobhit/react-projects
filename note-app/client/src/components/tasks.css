@@ -1,0 +1,142 @@
+.task {
+  padding-bottom: 0.3rem;
+}
+/* .add-task{
+    background-color:greenyellow;
+} */
+.task-list {
+  list-style: none;
+}
+.task-editing-form {
+  margin-bottom: 1.8rem;
+}
+.task-edit-input {
+  width: 70%;
+  padding: 0.7rem 3rem;
+  border: none;
+  outline: none;
+  color: #555;
+  background-color: #ccc;
+  border-radius: 2rem;
+}
+.task-cancel-btn {
+  padding: 0.7rem 2.6rem;
+  border-radius: 2rem;
+  margin-left: 0.4rem;
+  margin-top: 1rem;
+  border: none;
+  outline: none;
+  color: #666;
+  background-color: #eee;
+  cursor: pointer;
+}
+.task-update-btn {
+  padding: 0.7rem 2.6rem;
+  border-radius: 2rem;
+  margin-left: 0.4rem;
+  border: none;
+  outline: none;
+  color: #666;
+  background-color: #eee;
+  cursor: pointer;
+}
+.task-view {
+  margin-bottom: 1.7rem;
+}
+.task-grp {
+}
+
+.task-desc {
+  display: inline-block;
+  padding: 0.7rem 5rem;
+  color: #666;
+  background-color: #eee;
+  margin: 0.8rem 0.2rem;
+  width: 70%;
+  border-radius: 2rem;
+}
+.task-control {
+  display: inline-block;
+}
+.task-edit-btn {
+  display: inline-block;
+}
+.task-edit-btn,
+.task-delete-btn {
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  padding: 0.4rem 1rem;
+  color: #777;
+  margin-right: 0.8rem;
+  cursor: pointer;
+}
+.task-item {
+}
+
+.new-task-form {
+  position: sticky;
+  left: 0;
+  top: 9rem;
+  z-index: 1;
+  background: #fefefe;
+}
+
+.new-task-input {
+  width: 70%;
+  margin-top: 3rem;
+  margin-left: 3rem;
+  padding: 0.7rem 3rem;
+  border: none;
+  outline: none;
+  color: #555;
+  background-color: #eee;
+  border-radius: 2rem;
+  position: relative;
+  margin-bottom: 2rem;
+}
+.task-add-btn {
+  padding: 0.7rem 2.6rem;
+  border-radius: 2rem;
+  margin-left: 0.4rem;
+  border: none;
+  outline: none;
+  color: #666;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.task-checkbox {
+  display: none;
+}
+.task-check-label {
+  position: relative;
+  cursor: pointer;
+}
+.task-check-btn {
+  height: 1.9rem;
+  width: 1.9rem;
+  border: 2px solid #888;
+  border-radius: 50%;
+  position: absolute;
+  left: 0.5rem;
+  top: -0.4rem;
+}
+
+.task-check-btn::after {
+  content: "";
+  height: 1.4rem;
+  width: 1.4rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' fill='Green' viewBox='0 0 16 16'%3E%3Cpath d='M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z'/%3E%3C/svg%3E");
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.task-checkbox:checked ~ .task-check-label .task-check-btn::after {
+  opacity: 1;
+}

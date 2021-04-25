@@ -1,0 +1,62 @@
+.settings-cont {
+  display: flex;
+  max-width: 65%;
+  min-height: 75vh;
+  margin: 2rem auto;
+  padding: 4rem 3rem;
+  background-color: #fefefe;
+  border-radius: 2rem;
+}
+
+.cont-title {
+  padding-bottom: 1.6rem;
+  cursor: pointer;
+}
+
+.settings-cont-left {
+  margin-right: 1.2rem;
+  border-right: 1px solid #eee;
+  padding: 1rem 2rem;
+}
+
+.settings-cont-right {
+  padding: 2rem;
+}
+
+.user-form {
+  /* margin-left: 100%; */
+}
+
+.user-label {
+  display: block;
+}
+.user-input {
+  display: block;
+  padding: 0.5rem 2rem;
+  border: none;
+  display: block;
+  border-radius: 2rem;
+  margin: 0.8rem auto;
+  caret-color: #888;
+  background-color: rgba(100, 100, 100, 0.2);
+  color: #e9e9e9;
+}
+.user-input:focus {
+  outline: none;
+  box-shadow: 0 0.2rem 0.3rem #eee;
+}
+
+.user-btn {
+  padding: 0.5rem 2rem;
+  color: #444;
+  background-color: #eee;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+.change-btn {
+}
+.delete-btn {
+  background-color: tomato;
+}

@@ -1,0 +1,72 @@
+.sidenav {
+  display: flex;
+  width: 15%;
+  flex-direction: column;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  align-items: flex-start;
+  box-shadow: 0 0.7rem 1rem #777;
+  overflow: hidden;
+}
+.notes-logo {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 0.8rem;
+}
+.nav-list {
+  list-style: none;
+  margin-left: 1.3rem;
+  margin-top: 3.6rem;
+  padding: 0.2rem 1.6rem;
+  border-bottom: 2px solid rgba(116, 114, 114, 0.164);
+}
+.list-item {
+  margin-bottom: 1.8rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.outline-icon,
+.task-icon,
+.note-icon {
+  color: #666;
+  font-size: 1.8rem;
+  margin-right: 1.6rem;
+  cursor: pointer;
+}
+.add-icon,
+.settings-icon,
+.logout-icon {
+  color: #666;
+  font-size: 1.4rem;
+  margin-right: 1.2rem;
+  cursor: pointer;
+}
+.list-link {
+  text-decoration: none;
+}
+.list-link:visited {
+  color: inherit;
+}
+.text {
+  color: #666;
+  cursor: pointer;
+}
+.footer-nav {
+  margin-top: 14rem;
+  margin-left: 1.6rem;
+}
+.settings {
+  display: flex;
+  margin-bottom: 0.8rem;
+  cursor: pointer;
+}
+.logout-btn {
+  display: flex;
+  cursor: pointer;
+}

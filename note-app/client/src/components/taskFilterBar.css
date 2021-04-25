@@ -1,0 +1,36 @@
+.filter-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #aaa;
+  padding: 1rem 2rem;
+  color: #444;
+  position: sticky;
+  top: 3.4rem;
+  left: 0;
+  z-index: 1;
+}
+.filter-btns {
+  border: none;
+  outline: none;
+  padding: 1rem 3rem;
+  border-radius: 1.5rem;
+  /* border-bottom:2px solid red; */
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #555;
+  background-color: #8c8c8c;
+  box-shadow: 0 0.2rem 0.5rem #444;
+  box-shadow: inset 0.2rem -0.3rem 0.2rem #aaa, inset 0.2rem 0.08rem 0.2rem #bbb;
+  transition: all 0.4s ease;
+}
+.filter-btns:hover {
+  box-shadow: inset 0.1rem -0.2rem 0.3rem #aaa, inset 0.1rem 0.18rem 0.2rem #bbb,
+    0 0.6rem 0.7rem aquamarine;
+  color: aquamarine;
+}
+.filter-btns[aria-pressed="true"] {
+  box-shadow: inset 0.09rem -0.1rem 0.3rem #aaa,
+    inset 0.09rem 0.08rem 0.2rem #bbb, 0 0.5rem 0.7rem aquamarine;
+  color: aquamarine;
+}

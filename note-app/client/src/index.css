@@ -1,0 +1,77 @@
+html {
+  font-size: 94.44%;
+}
+@media only screen and (max-width: 385px) {
+  html {
+    font-size: 44.44%;
+  }
+}
+@media only screen and (min-width: 385px) and (max-width: 600px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+/* 
+1200 56.25% 1rem = 9px
+900  50% 8px
+*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior: none;
+  /* remove it */
+  /* background-color: rgb(241, 231, 231); */
+}
+/* fix the mozilla issue */
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #888;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #eee;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.app-cont {
+  display: flex;
+  width: 100%;
+}
+.app-cont-left {
+  width: 15%;
+  min-height: 100vh;
+  z-index: 2;
+}
+.app-cont-right {
+  width: 85%;
+  position: relative;
+}
+.app-cont-right-top--1 {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.app-cont-right-top--1 {
+  z-index: 2;
+}
+
+.app-content {
+  min-height: calc(100vh - 3.4rem);
+  padding-bottom: 2rem;
+  background-color: #fefefe;
+}
