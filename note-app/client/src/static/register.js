@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import './login.css'
 import { Blob } from './svg'
 import note from '../notes.jpg';
-
+import { AuthContext } from '../services/auth';
+import { useHistory } from 'react-router-dom';
 const axios = require('axios');
 
 

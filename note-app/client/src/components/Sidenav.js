@@ -84,14 +84,17 @@ function Sidenav() {
             </ul>
 
             <div className="footer-nav">
-                <div className="settings">
-                    <IconContext.Provider value={{ className: "settings-icon" }}>
-                        <div>
-                            <BsGear />
-                        </div>
-                    </IconContext.Provider>
+                <Link to='/settings' className='list-link'>
+                    <div className="settings">
+                        <IconContext.Provider value={{ className: "settings-icon" }}>
+                            <div>
+                                <BsGear />
+                            </div>
+                        </IconContext.Provider>
                     Settings
                 </div>
+
+                </Link>
 
                 <div className="logout-btn" onClick={handleClick}>
                     <IconContext.Provider value={{ className: "logout-icon" }}>

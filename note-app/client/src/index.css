@@ -24,8 +24,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overscroll-behavior: none;
-  /* remove it */
-  /* background-color: rgb(241, 231, 231); */
 }
 /* fix the mozilla issue */
 body::-webkit-scrollbar {

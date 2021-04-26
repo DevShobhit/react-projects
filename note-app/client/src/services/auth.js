@@ -48,6 +48,7 @@ export function Auth({ children }) {
     };
 
     const isAuthorized = () => {
+        console.log(isAuthenticated)
         return isAuthenticated
     }
     return (

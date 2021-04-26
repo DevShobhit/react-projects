@@ -49,6 +49,7 @@
 }
 .list-link {
   text-decoration: none;
+  color: inherit;
 }
 .list-link:visited {
   color: inherit;
